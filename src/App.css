@@ -1,40 +1,68 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.app {
+  max-width: 800px;
+  margin: 20px auto;
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+.header {
+  background-color: #0050b3; /* Red Bull Formula 1 Team blue */
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0;
 }
 
 .driver-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .driver-card {
-  background-color: #f0f0f0;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
   padding: 20px;
   max-width: 300px;
+  transition: transform 0.3s ease;
 }
 
-.driver-img {
-  width: 150px; /* Adjust the width to your preference */
-  height: auto; /* Maintain aspect ratio */
+.driver-card:hover {
+  transform: translateY(-5px);
+}
+
+.driver-card img {
+  max-width: 100%;
   border-radius: 50%;
-  margin-bottom: 15px;
 }
 
-h2 {
+.driver-details {
+  margin-top: 20px;
+}
+
+.driver-details h2 {
+  color: #333;
   margin-bottom: 10px;
 }
 
-p {
+.driver-details p {
+  color: #666;
   margin: 5px 0;
+}
+
+.loading-text {
+  font-style: italic;
+  color: #999;
 }
 
 .footer {
@@ -43,4 +71,3 @@ p {
   padding: 10px;
   text-align: center;
 }
-
